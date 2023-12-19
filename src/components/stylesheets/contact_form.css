@@ -1,0 +1,116 @@
+/* КОНТАКТЫ */
+
+/* Добавленные стили для .contact-form */
+.contact-form {
+    padding: 20px;
+    /* Примерный отступ для контейнера формы */
+    background-color: #f5f5f5;
+
+}
+
+.contact-container {
+    display: flex;
+    width: 70vw;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.rightside {
+}
+
+
+.leftside {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-betw;
+}
+
+.contact-form h2 {
+    color: #333;
+    /* Цвет заголовка формы */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+/* Если есть необходимость, вы можете добавить дополнительные стили для других элементов формы */
+
+.map {
+    position: sticky;
+    margin-top: 0%;
+}
+
+
+
+.kesednsoled:after,
+.kesednsoled:before {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.ico-wrap {
+    color: #40b4c1;
+    width: 48px;
+    height: 48px;
+    margin: 30px 18px 5px 5px;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid #40b4c1;
+    float: left;
+    border-radius: 30px;
+}
+
+.ico-contact {
+    line-height: 1.9 !important;
+}
+
+.meanous-andscoev {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.aio-icon-title {
+    font-size: 16px;
+    color: #40b4c1;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+
+    .meanous-andscoev,
+    .ico-wrap {
+        float: none;
+        text-align: center;
+    }
+
+    .ico-wrap {
+        margin: 0 auto 15px auto;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .leftside{
+        width: 100%;
+    }
+    .contact-form iframe{
+        display: none;
+    }
+
+}

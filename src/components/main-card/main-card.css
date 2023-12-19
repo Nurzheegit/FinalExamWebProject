@@ -1,0 +1,36 @@
+.main-card-container {
+    height: 70vh;
+    display: flex;
+}
+
+
+.main-card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100dvw;
+}
+
+.main-card-text {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-card-text h2{
+    font-size: 4.2rem;
+}
+
+
+.main-card-container img {
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;    
+}
+

@@ -1,0 +1,30 @@
+.weather-card-7-days-container {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+
+    padding: 50px;
+    background-color: #4b515d;
+
+    background-color: rgba(64, 180, 193, 0.3);
+}
+
+
+.weather-car-7-days-item {
+    width: 13%;
+    min-width: 200px;
+    margin-left: 20px;
+}
+
+
+
+@media only screen and (max-width: 720px) {
+    body {
+        background-color: lightblue;
+    }
+
+    /* Additional styles for small screens go here */
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1024px) {}

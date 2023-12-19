@@ -1,0 +1,27 @@
+/* ContactPage.module.css */
+.contactPage {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header.module.css */
+  .header {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* ContactForm.module.css */
+  .contactForm {
+    margin: 20px 0;
+  }
+  
+  /* ... (добавьте стили для формы) */
+  
+  /* Footer.module.css */
+  .footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+  }
+  
