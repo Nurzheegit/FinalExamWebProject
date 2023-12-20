@@ -3,27 +3,17 @@ import React, { useEffect, useState } from "react";
 import "./main-card.css";
 import apiservice from "../../service/api-service";
 
+
 const MainCard = ({ city, country, onImageLoad }) => {
   const [mainImg, setMainImg] = useState("");
 
   useEffect(() => {
     const fetchWeatherAndImage = async () => {
       try {
-        // Extract image data from the API response
         const imageResult = await fetchImage(city, country);
-        // Log the received image URL to the console
         const imageUrl = imageResult.images[0].imageUrl;
-        // console.log("Image URL:", imageUrl);
         setMainImg(imageUrl);
-
-        // Use the image URL for display
-        setMainImg(imageResult.images[0].imageUrl);
-
-        // Pass the image URL to the parent component
-        onImageLoad(imageResult.images[0].imageUrl);
-
-        // Use the image URL for display
-        setMainImg(imageResult.images[0].imageUrl);
+        onImageLoad(imageUrl);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -32,17 +22,18 @@ const MainCard = ({ city, country, onImageLoad }) => {
     fetchWeatherAndImage();
   }, [city, country, onImageLoad]);
 
-  // Function to fetch image data from the provided API
+
+
   const fetchImage = async (city, country) => {
     const requestOptions = {
       method: "POST",
       headers: {
-        "X-API-KEY": "9236e3154133ad2512a203d006047cffb1b9a8ed",
+        "X-API-KEY": "053d9a57f83a144ccb6775873d74dc486d5bc412",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
         q: city,
-        gl: country.toLowerCase(), // Assuming the country code is in lowercase
+        gl: country.toLowerCase(),
       }),
     };
 
